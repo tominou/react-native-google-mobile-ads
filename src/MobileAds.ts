@@ -42,7 +42,7 @@ class MobileAdsModule implements MobileAdsModuleInterface {
   }
 
   setAppMuted(muted: bool) {
-    return RNGoogleMobileAdsModule.setAppMuted(bool);
+    return RNGoogleMobileAdsModule.setAppMuted(muted);
   }
 
   setRequestConfiguration(requestConfiguration: RequestConfiguration) {
