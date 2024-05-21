@@ -37,6 +37,14 @@ class MobileAdsModule implements MobileAdsModuleInterface {
     return RNGoogleMobileAdsModule.initialize();
   }
 
+  setAppVolume(volume: number) {
+    return RNGoogleMobileAdsModule.setAppVolume(volume);
+  }
+
+  setAppMuted(muted: bool) {
+    return RNGoogleMobileAdsModule.setAppMuted(bool);
+  }
+
   setRequestConfiguration(requestConfiguration: RequestConfiguration) {
     let config;
     try {
