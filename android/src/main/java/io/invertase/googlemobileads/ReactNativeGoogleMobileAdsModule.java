@@ -139,6 +139,18 @@ public class ReactNativeGoogleMobileAdsModule extends ReactNativeModule {
   }
 
   @ReactMethod
+  public void setAppVolume(volume, Promise promise) {
+    MobileAds.setAppVolume(buildRequestConfiguration(requestConfiguration));
+    promise.resolve(null);
+  }
+
+  @ReactMethod
+  public void setAppMuted(muted, Promise promise) {
+    MobileAds.setAppMuted(buildRequestConfiguration(requestConfiguration));
+    promise.resolve(null);
+  }
+
+  @ReactMethod
   public void setRequestConfiguration(ReadableMap requestConfiguration, Promise promise) {
     MobileAds.setRequestConfiguration(buildRequestConfiguration(requestConfiguration));
     promise.resolve(null);
